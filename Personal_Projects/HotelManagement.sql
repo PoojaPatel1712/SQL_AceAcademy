@@ -54,9 +54,9 @@ INSERT INTO Hotel (HotelID, Name, Address, Phone, Email, Rating)
 VALUES
 	(1, 'Taj Mahal Palace', 'Apollo Bunder, Mumbai', '022-6665-2323', 'taj.mumbai@gmail.com', 4.8),
 	(2, 'The Oberoi Grand', '15 Jawaharlal Nehru Rd, Kolkata', '033-2249-2323', 'oberoi.kolkata@gmail.com', 4.6),
-    (3, 'Leela Palace', '23 Old Airport Rd, Bangalore', '080-2521-1234', 'leela.bangalore@gmail.com', 4.7),
-    (4, 'Rambagh Palace', 'Bhawani Singh Rd, Jaipur', '0141-2385-020', 'rambagh.jaipur@gmail.com', 4.5),
-    (5, 'ITC Mughal', 'Fatehabad Road, Agra', '0562-4021-234', 'itc.agra@gmail.com', 4.4);
+	(3, 'Leela Palace', '23 Old Airport Rd, Bangalore', '080-2521-1234', 'leela.bangalore@gmail.com', 4.7),
+    	(4, 'Rambagh Palace', 'Bhawani Singh Rd, Jaipur', '0141-2385-020', 'rambagh.jaipur@gmail.com', 4.5),
+    	(5, 'ITC Mughal', 'Fatehabad Road, Agra', '0562-4021-234', 'itc.agra@gmail.com', 4.4);
 
 -- Inserting data into the Room table
 INSERT INTO Room (RoomID, HotelID, Room_Number, Room_Type, Price_Per_Night, Availability)
@@ -77,38 +77,38 @@ INSERT INTO Guest (GuestID, First_Name, Last_Name, Address, Phone, Email)
 VALUES
 	(1, 'Rahul', 'Verma', '34 Lotus Lane, Mumbai', '98765-43210','rahul.verma@gmail.com'),
 	(2, 'Priya', 'Sharma', '17 Jasmine St, Kolkata', '98765-12345', 'priya.sharma@gmail.com'),
-    (3, 'Amit', 'Patel', '42 Orchid Rd, Bangalore', '98765-67890', 'amit.patel@gmail.com'),
-    (4, 'Sanya', 'Singh', '56 Rose Avenue, Jaipur', '98765-98765', 'sanya.singh@gmail.com'),
-    (5, 'Vikram', 'Gupta', '21 Taj Road, Agra', '98765-23456', 'vikram.gupta@gmail.com'),
+	(3, 'Amit', 'Patel', '42 Orchid Rd, Bangalore', '98765-67890', 'amit.patel@gmail.com'),
+	(4, 'Sanya', 'Singh', '56 Rose Avenue, Jaipur', '98765-98765', 'sanya.singh@gmail.com'),
+	(5, 'Vikram', 'Gupta', '21 Taj Road, Agra', '98765-23456', 'vikram.gupta@gmail.com'),
 	(6, 'Neha', 'Reddy', '28 Lily St, Mumbai', '98765-11111', 'neha.reddy@gmail.com'),
-    (7, 'Raj', 'Kumar', '9 Marigold Rd, Kolkata', '98765-22222', 'raj.kumar@gmail.com'),
-    (8, 'Sneha', 'Chopra', '3 Tulip Lane, Bangalore', '98765-33333', 'sneha.chopra@gmail.com'),
-    (9, 'Sanjay', 'Shah', '7 Jasmine St, Jaipur', '98765-44444', 'sanjay.shah@gmail.com'),
-    (10, 'Deepika', 'Goyal', '14 Orchid Rd, Agra', '98765-55555', 'deepika.goyal@gmail.com'),
-    (11, 'Ramesh', 'Verma', '32 Rose Avenue, Delhi', '98765-66666', 'ramesh.verma@gmail.com'),
-    (12, 'Priyanka', 'Gupta', '44 Tulip Lane, Chennai', '98765-77777', 'priyanka.gupta@gmail.com'),
-    (13, 'Sachin', 'Yadav', '27 Lily St, Hyderabad', '98765-88888', 'sachin.yadav@gmail.com'),
-    (14, 'Nisha', 'Malik', '51 Marigold Rd, Pune', '98765-99999', 'nisha.malik@gmail.com'),
-    (15, 'Vivek', 'Singh', '8 Jasmine St, Chandigarh', '98765-00000', 'vivek.singh@gmail.com');
+        (7, 'Raj', 'Kumar', '9 Marigold Rd, Kolkata', '98765-22222', 'raj.kumar@gmail.com'),
+    	(8, 'Sneha', 'Chopra', '3 Tulip Lane, Bangalore', '98765-33333', 'sneha.chopra@gmail.com'),
+    	(9, 'Sanjay', 'Shah', '7 Jasmine St, Jaipur', '98765-44444', 'sanjay.shah@gmail.com'),
+    	(10, 'Deepika', 'Goyal', '14 Orchid Rd, Agra', '98765-55555', 'deepika.goyal@gmail.com'),
+    	(11, 'Ramesh', 'Verma', '32 Rose Avenue, Delhi', '98765-66666', 'ramesh.verma@gmail.com'),
+    	(12, 'Priyanka', 'Gupta', '44 Tulip Lane, Chennai', '98765-77777', 'priyanka.gupta@gmail.com'),
+    	(13, 'Sachin', 'Yadav', '27 Lily St, Hyderabad', '98765-88888', 'sachin.yadav@gmail.com'),
+    	(14, 'Nisha', 'Malik', '51 Marigold Rd, Pune', '98765-99999', 'nisha.malik@gmail.com'),
+    	(15, 'Vivek', 'Singh', '8 Jasmine St, Chandigarh', '98765-00000', 'vivek.singh@gmail.com');
 
 -- Inserting data into the Reservation table
 INSERT INTO Reservation (ReservationID, GuestID, HotelID, RoomID, Check_In_Date, Check_Out_Date, Total_Price, Status)
 VALUES 
 	(1001, 1, 1, 101, '2023-10-01', '2023-10-05', 32000.00, 'Confirmed'),
-    (1002, 2, 2, 203, '2023-09-28', '2023-10-02', 18000.00, 'Confirmed'),
-    (1003, 3, 3, 201, '2023-10-10', '2023-10-15', 45000.00, 'Confirmed'),
-    (1004, 4, 4, 203, '2023-10-05', '2023-10-10', 24000.00, 'Confirmed'),
-    (1005, 5, 5, 302, '2023-09-30', '2023-10-03', 30000.00, 'Confirmed'),
+	(1002, 2, 2, 203, '2023-09-28', '2023-10-02', 18000.00, 'Confirmed'),
+	(1003, 3, 3, 201, '2023-10-10', '2023-10-15', 45000.00, 'Confirmed'),
+	(1004, 4, 4, 203, '2023-10-05', '2023-10-10', 24000.00, 'Confirmed'),
+	(1005, 5, 5, 302, '2023-09-30', '2023-10-03', 30000.00, 'Confirmed'),
 	(1006, 6, 1, 102, '2023-10-03', '2023-10-06', 4500.00, 'Confirmed'),
-    (1007, 7, 2, 204, '2023-10-08', '2023-10-12', 7000.00, 'Confirmed'),
-    (1008, 8, 3, 202, '2023-10-12', '2023-10-15', 3300.00, 'Confirmed'),
-    (1009, 9, 4, 204, '2023-10-06', '2023-10-09', 5400.00, 'Confirmed'),
-    (1010, 10, 5, 301, '2023-10-02', '2023-10-07', 8000.00, 'Confirmed'),
-    (1011, 11, 1, 101, '2023-10-04', '2023-10-07', 2400.00, 'Confirmed'),
-    (1012, 12, 2, 203, '2023-10-09', '2023-10-14', 9000.00, 'Confirmed'),
-    (1013, 13, 3, 201, '2023-10-11', '2023-10-15', 4200.00, 'Confirmed'),
-    (1014, 14, 4, 204, '2023-10-07', '2023-10-10', 2700.00, 'Confirmed'),
-    (1015, 15, 5, 302, '2023-10-01', '2023-10-06', 5000.00, 'Confirmed');
+    	(1007, 7, 2, 204, '2023-10-08', '2023-10-12', 7000.00, 'Confirmed'),
+    	(1008, 8, 3, 202, '2023-10-12', '2023-10-15', 3300.00, 'Confirmed'),
+    	(1009, 9, 4, 204, '2023-10-06', '2023-10-09', 5400.00, 'Confirmed'),
+    	(1010, 10, 5, 301, '2023-10-02', '2023-10-07', 8000.00, 'Confirmed'),
+    	(1011, 11, 1, 101, '2023-10-04', '2023-10-07', 2400.00, 'Confirmed'),
+    	(1012, 12, 2, 203, '2023-10-09', '2023-10-14', 9000.00, 'Confirmed'),
+    	(1013, 13, 3, 201, '2023-10-11', '2023-10-15', 4200.00, 'Confirmed'),
+    	(1014, 14, 4, 204, '2023-10-07', '2023-10-10', 2700.00, 'Confirmed'),
+    	(1015, 15, 5, 302, '2023-10-01', '2023-10-06', 5000.00, 'Confirmed');
 
 
 -- Retrieving Data (SELECT):
